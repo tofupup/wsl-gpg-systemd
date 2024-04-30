@@ -1,5 +1,5 @@
 [Unit]
-Description=GnuPG cryptographic agent (ssh-agent emulation)
+Description=remote gpg-agent ssh socket
 Documentation=man:gpg-agent(1) man:ssh-add(1) man:ssh-agent(1) man:ssh(1)
 
 [Socket]

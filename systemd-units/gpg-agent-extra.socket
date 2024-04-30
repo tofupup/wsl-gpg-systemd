@@ -1,9 +1,9 @@
 [Unit]
-Description=remote gpg-agent
+Description=remote gpg-agent extra socket
 Documentation=man:gpg-agent(1)
 
 [Socket]
-ListenStream=%t/gnupg/S.gpg-agent
+ListenStream=%t/gnupg/S.gpg-agent.extra
 SocketMode=0600
 DirectoryMode=0700
 Accept=true

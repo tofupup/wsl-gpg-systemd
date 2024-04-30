@@ -1,0 +1,11 @@
+[Unit]
+Description=remote gpg-agent browser socket
+Requires=gpg-agent-browser.socket
+
+[Service]
+Type=simple
+ExecStart=/home/john/.local/bin/npiperelay.exe -ep -ei -s -a 'C:/Users/john/AppData/Local/gnupg/S.gpg-agent.browser'
+StandardInput=socket
+
+[Install]
+WantedBy=default.target
